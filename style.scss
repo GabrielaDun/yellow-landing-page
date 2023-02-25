@@ -4,12 +4,13 @@ $color-second: #f7f7f7; /*light grey*/
 $color-third: #777676; /*dark grey*/
 $color-light: #fff; /*white*/
 $color-dark: #000e0e; /*almost black*/
+$color-forth: #999999;
 
 $font-text: 'Inconsolata', monospace;
 $font-head: 'Signika', sans-serif;
 $font-logo: 'Pacifico', cursive;
 
-$transition: all 1s;
+$transition: all 1s; 
 
 /*Global*/
 *, *::before, *::after {
