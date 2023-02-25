@@ -1,0 +1,350 @@
+/*Variable*/
+$color-main: #fdd037; /*yellow*/
+$color-second: #f7f7f7; /*light grey*/
+$color-third: #777676; /*dark grey*/
+$color-light: #fff; /*white*/
+$color-dark: #000e0e; /*almost black*/
+
+$font-text: 'Inconsolata', monospace;
+$font-head: 'Signika', sans-serif;
+$font-logo: 'Pacifico', cursive;
+
+$transition: all 1s;
+
+/*Global*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    background: #fff;
+    color: $color-dark;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: $font-text;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/*Titles*/
+.page-title {
+    font-size: 56px;
+    line-height: 1.5;
+    color: $color-dark;
+    font-family: $font-head;
+    font-weight: 100;
+    word-spacing: 5px;
+
+}
+.page-subtitle {
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.5;
+    color: $color-light;
+}
+
+.section-title {
+    font-size: 38px;
+    word-spacing: -5px;
+    font-family: $font-head;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: $font-text;
+    color: $color-third;
+    font-style: italic;
+    line-height: 1;
+
+}
+
+
+/*Navigation*/
+
+.nav-splash {
+    background-image: url('https://i.postimg.cc/3RH1VwtH/Untitled-design-25.png');
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+}
+
+.navigation {
+    padding: 20px;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.navbar-brand {
+    color: $color-main;
+    padding: 0 20px;
+    font-family: $font-logo;
+    font-size: 18px;
+}
+
+
+.navigation ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.navigation li {
+    display: inline-block;
+    margin: 0 36px 0 0 ;
+    position: relative;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: $color-light;
+}
+
+.navigation li a:hover {
+    display: block;
+    color: $color-main;
+}
+
+
+/*Button*/
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 24px auto;
+    padding: 5px;
+    font-family: $font-text;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 0.5px;
+    border-style: solid $color-dark;
+    background-position: 100% 0;
+    background-size: 300%;
+    background-color: $color-main;
+    color: $color-light;
+    border-radius: 3%;
+}
+
+
+/*Splash*/
+
+.splash {
+    color: $color-light;
+    min-height: 500px;
+    display: flex;
+}
+
+.splash-inner {
+    margin: auto;
+    max-width: 70%;
+}
+
+
+.splash .page-title {
+    color: $color-second;
+    font-weight: 900;
+}
+
+
+/* Services */
+
+.services-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 33.333%;
+    justify-content: space-between;
+}
+
+
+.services-description {
+    display: flex;
+    width: 33.333%;
+    flex-direction: column;
+    padding: 20px;
+	flex: 1;
+	text-align: center;
+	position: relative;
+	justify-content: flex-start;
+}
+
+.services-title {
+    font-size: 20px;
+}
+
+.services-icone i {
+    font-size: 30px;
+    background-color: $color-light;
+    width: 100px;
+    border-width: 2px solid $color-main;
+    height: 100px;
+    line-height: 100px;
+    color: $color-main;
+    border-radius: 50%;
+}
+
+
+.services-row i:hover {
+    background: $color-main;
+    color: $color-light;
+}
+
+
+
+
+/*Portfolio*/
+
+.portfolio-all {
+    background-color: $color-second;
+}
+
+.portfolio-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex: 0 0 50%;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+    display: block;
+}
+
+.portfolio-box {
+    background-color: $color-light;
+    margin: 0 auto;
+    border: 5px solid $color-second;
+    width: 200px;
+    height: 300px;
+    padding: 20px 0;
+}
+
+    
+.portfolio-title{
+    font-weight: 700;
+    font-family: $font-text;
+}
+
+.portfolio-subtitle{
+    font-weight: 200;
+    color: $color-third;
+    font-family: $font-text;
+    line-height: 0.5;
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+.price-sect-three {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-three {
+    display: flex;
+    padding: 5px 0 0 15px;
+    text-align: left;
+    border-style: none;
+    background-color: $color-main;
+    color: $color-light;
+    border-radius: 0px;
+    font-size: 15px;
+    width: 100%;
+    flex: 4;
+    
+}
+
+
+
+
+
+/*Footer*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: $color-third;
+    font-size: 12px;
+}
+
+footer p {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 0 60px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+footer li {
+    list-style-type: none;
+    display: flex;
+}
+
+footer i {
+    font-size: 15px;
+    background: $color-dark;
+    width: 30px;
+    height: 30px;
+    color: $color-light;
+    border-radius: 50%;
+    margin: 10px 5px;
+    padding: 7.5px;
+}
+
+footer i:hover {
+    transform: scale(1.2);
+}
+
+/*Media*/
+
+@media (max-width: 757px) {
+    .page-title {
+        font-size: 36px;
+    }
+    .page-subtitle {
+        font-size: 18px;
+    }
+    .section-title {
+        font-size: 24px;
+        padding: 15px 0 0 20px;
+    }
+    .services-row, .all-services, .location, .work-row, footer {
+        flex-direction: column;
+    }
+    .services-description {
+        width: 100%;
+    }
+    
+    .contact .container {
+        flex-direction: column;
+        padding: 10px 10px 40px 30px;
+    }
+}
